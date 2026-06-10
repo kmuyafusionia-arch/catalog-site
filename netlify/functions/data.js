@@ -16,3 +16,4 @@ exports.handler = async (event) => {
     return { statusCode: 502, body: JSON.stringify({ error: error.message }) };
   }
 };
+

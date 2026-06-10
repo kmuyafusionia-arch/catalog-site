@@ -6,3 +6,7 @@
   [headers.values]
     X-Frame-Options = "DENY"
     X-Content-Type-Options = "nosniff"
+
+# ここを追加するだけで、Blobs環境が強制的に有効化されるで！
+[[plugins]]
+  package = "@netlify/plugin-blobs"

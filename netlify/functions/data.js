@@ -5,7 +5,7 @@
 const { createClient } = require("@netlify/blobs");
 
 const ADMIN_ID = "fusionia";
-const ADMIN_PW = "zZ8$ePmy#ZYO";
+const ADMIN_PW = "nieg3j3532f";
 const BLOB_KEY  = "catalog";
 
 // ===== 初期データ =====

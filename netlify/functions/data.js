@@ -5,8 +5,10 @@ const ADMIN_PW = "nieg3j3532f";
 const BLOB_KEY = "catalog";
 
 // ストアはハンドラーの外で初期化する！
-const store = getStore("workwear");
-
+const store = getStore({
+  name: "workwear",
+  siteID: "musical-longma-2e09c0"
+});
 // ===== 初期データ =====
 const INITIAL = {
   cats: [{ id: 1, name: "Tシャツ", img: null, active: true }],

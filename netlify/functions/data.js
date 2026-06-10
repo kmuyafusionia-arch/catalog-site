@@ -2,7 +2,7 @@
 // GET  /api/data        → 全データ取得
 // POST /api/data        → 全データ上書き保存（管理者認証必須）
 
-const { createClient } = require("@netlify/blobs");
+const { getStore } = require("@netlify/blobs");
 
 const ADMIN_ID = "fusionia";
 const ADMIN_PW = "nieg3j3532f";
@@ -71,7 +71,7 @@ exports.handler = async (event) => {
   }
 
   // Netlify Blobs クライアント
-  const store = createClient({ name: "workwear" });
+const store = getStore("workwear");
 
   // -------- GET: データ取得（認証不要） --------
   if (event.httpMethod === "GET") {
